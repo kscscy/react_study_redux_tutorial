@@ -1,26 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import CounterContainer from './containers/CounterContainer'
+import TodosContainer from './containers/TodosContainer'
 
-function App() {
+//<Counter number={0} /> 를 <CounterContainer>로 교체
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <CounterContainer />
+      <hr />
+      <TodosContainer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
